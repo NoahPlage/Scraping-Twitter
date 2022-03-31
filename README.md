@@ -1,6 +1,11 @@
 # Scraping Twitter Data and Perform Sentiment Analysis
 To be updated...
 
+Basic setup to get data from twitter with a keyword.
+
+* A crawler that crawls the latest 200 tweets from a certain hashtag or username
+* Word Cloud of lastest tweet
+
 ## Prerequisite to use
 ### Libraries
 Use "pip install --" command to install the following libraries:
