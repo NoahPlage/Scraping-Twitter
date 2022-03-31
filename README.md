@@ -25,6 +25,8 @@ numpy
 Matplotlib
 PIL
 ```
+### Required file(s)
+- Download `ukraine_map.png` into local folder as it will be used to Word Cloud analysis.
 ### Twitter Authorisation
 Get Twitter api key + secret, access token key + secret from (https://dev.twitter.com/oauth/overview/application-owner-access-tokens) and fill in the corresponding variables and save as `twitter-keys.env` local file.
 ```
