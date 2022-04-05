@@ -1,10 +1,25 @@
 # Scraping Twitter Data and Perform Sentiment Analysis
-To be updated...
+### Situation
+> “AP Photos: 1 Month: War in Ukraine Rages on; 3m Have Fled.” AP NEWS, The Associated Press, 23 Mar. 2022, https://apnews.com/article/russia-ukraine-putin-zelenskyy-europe-5095691ab6a2c0b12874aa4fa30e23cf. 
 
-Basic setup to get data from twitter with a keyword.
+### Brief
+Due to Russia’s unprovoked and unjustified war on Ukraine, media outlets have harsh and strong words on Russia. 
 
-* A crawler that crawls the latest 200 tweets from a certain hashtag or username
-* Word Cloud of lastest tweet
+### Objective
+We are using social media (Twitter) to understand the public’s sentiments of the war through: 
+- Collecting Twitter data
+- Developing data crawler
+- Storing crawled data
+- Performing sentiment analysis
+
+## Table of Contents
+- [Prerequisite to use](#prerequisite-to-use)
+  - [Libraries](#libraries)
+  - [Required files](#required-files)
+  - [Twitter authorisation](#twitter-authorisation)
+  - [SQL authorisation](#sql-authorisation)
+- [Database Schema](#database-schema)
+- [Contributers](#contributers)
 
 ## Prerequisite to use
 ### Libraries
@@ -14,12 +29,8 @@ Use "pip install --" command to install the following libraries:
 pandas
 tweepy
 sqlalchemy
-datetime
-OS
 textblob
 NLTK
-itertools
-collections
 wordcloud
 numpy
 Matplotlib
@@ -54,4 +65,24 @@ The following is the list of the connection parameters:
 - *dbPort*: the port number that defaults to 5432 if it is not provided.
 - *dbName*: the name of the database that you want to connect.
 
-To be updated...
+# Database Schema
+The scraped data will be loaded and stored in a PostGreSQL database table:
+
+**twitterDatabase:**
+- Tweet ID
+- Username
+- User's display name
+- User's location
+- User's followers count
+- User's follow count
+- User's tweet
+- Hashtags in user's tweet
+- Tweet's polarity
+- Tweet's subjectivity
+
+# Contributers
+
+- [Angela](https://www.linkedin.com/in/angela-poh-a7553098/)
+- [Brandon](https://www.linkedin.com/in/jinheng-lim/)
+- [Mavis](https://www.linkedin.com/in/mavis-luo-3a5b76192/)
+- [Soon Chye](https://www.linkedin.com/in/lim-soonchye/)
