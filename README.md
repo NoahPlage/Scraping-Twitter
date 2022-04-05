@@ -82,7 +82,7 @@ The scraped data will be loaded and stored in a PostGreSQL database table:
 
 # Contributers
 
-- [Angela](https://www.linkedin.com/in/angela-poh-a7553098/)
+- [Angela]https://www.linkedin.com/in/angela-p-171b30136/)
 - [Brandon](https://www.linkedin.com/in/jinheng-lim/)
 - [Mavis](https://www.linkedin.com/in/mavis-luo-3a5b76192/)
 - [Soon Chye](https://www.linkedin.com/in/lim-soonchye/)
