@@ -19,6 +19,11 @@ We are using social media (Twitter) to understand the public’s sentiments of t
   - [Twitter authorisation](#twitter-authorisation)
   - [SQL authorisation](#sql-authorisation)
 - [Database Schema](#database-schema)
+- [Analysis Results](#analysis-results)
+  - [Words Frequency](#words-frequency)
+  - [Word Cloud](#word-cloud)
+  - [Sentiment Analysis](#sentiment-analysis)
+- [Challenges](#challenges)
 - [Contributers](#contributers)
 
 ## Prerequisite to use
@@ -80,7 +85,55 @@ The scraped data will be loaded and stored in a PostGreSQL database table:
 - Tweet's polarity
 - Tweet's subjectivity
 
+# Analysis Results
+Here we showcase some of our data visualsations.
+
+## Words Frequency
+<img src="https://user-images.githubusercontent.com/102339940/161910738-447b9973-e1bd-445d-a307-fdd644ba69b4.png" width=65% height=65%>
+
+## Word Cloud
+![MicrosoftTeams-image](https://user-images.githubusercontent.com/102339940/161911640-06346350-39b0-4400-8626-0e0024b14368.png)
+
+## Sentiment Analysis
+<img src="https://user-images.githubusercontent.com/102339940/161911805-55c0dfc7-bc89-4c29-8bb5-f41096450395.png" width=35% height=35%>
+
+# Challenges
+
+### Sentiment Analysis is difficult
+
+- **False Negative Data** - The tweet below is a **positive statement** but polarity shows negative.
+```
+Tweet ID:1508339978610393089
+Username:GPCinEnglish
+Display Name:Garry Patrick Cooke
+Location:
+Follower Count:83
+Following Count:598
+Tweet Text:A wartime leader who orders the unjustifiable destruction of homes and hospitals, shops and schools, factories and libraries, etc., commits war crimes.  Therefore, such a leader is a war criminal.  #StandWithUkraine
+Hashtags Used:['StandWithUkraine']
+Polarity:-0.2
+Subjectivity:0.53
+```
+
+- **Inaccuracy** - Below is another tweet that has **strong** comment but polarity and subjectivity is calculated as ZERO.
+```
+Tweet ID:1508334256107438083 
+Username:J_arnd_75 
+Display Name:_J.nex 🇺🇦💪 
+Location: 
+Follower Count:9 
+Following Count:116 
+Tweet Text:Invaders must die! #StopRussia #StopRussianAgression https://t.co/6kaj4GA9Kh 
+Hashtags Used:['StopRussia', 'StopRussianAgression'] 
+Polarity:0.0 
+Subjectivity:0.0
+```
+### Limitations
+  -  Twitter API not able to pull data that are more than 7 days
+  -  Analysis and charts can varies widely due to the dynamic data
+
 # Contributers
+Hello World!
 
 - [Angela](https://www.linkedin.com/in/angela-p-171b30136/)
 - [Brandon](https://www.linkedin.com/in/jinheng-lim/)
