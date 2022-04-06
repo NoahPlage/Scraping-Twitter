@@ -86,7 +86,7 @@ The scraped data will be loaded and stored in a PostGreSQL database table:
 - Tweet's subjectivity
 
 # Analysis Results
-Here we showcase some of our data visualsations.
+Here we showcase some of our data visualisations.
 
 ## Words Frequency
 <img src="https://user-images.githubusercontent.com/102339940/161910738-447b9973-e1bd-445d-a307-fdd644ba69b4.png" width=65% height=65%>
